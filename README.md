@@ -12,3 +12,11 @@ fingerprints from the 8M in MolPort, which are also diverse from the
 score with the similarity of each fingerprint to its nearest of 2M
 ChEMBL fingerprints. Takes about 14 minutes total.
 
+* [k2Sweep](k2Sweep.ipynb) - a sweep-based heuristic to find a most
+novel fingerprint in a dataset. "Most novel" means the Tanimoto score
+between the fingerprint and its nearest neighbor is the smallest of
+all nearest-neighbor scores. I place it in the context of MaxMin picking,
+describe what sweep-search means, including 2Sweep and 4Sweep, show that
+those standard graph methods don't seem useful for Tanimoto data sets,
+and propose a variant which uses a number of nearest-neighbor searches
+to select an improved initial pick.
